@@ -36,20 +36,17 @@ class MainCanvas extends Component {
             this.setState({ value: this.state.value + 1 });
 
             ctx.lineWidth = 4;
-            ctx.lineTo(
-                (e.clientX - objCoords.x) *
-                    ((window.screen.width - canvWidth) / window.screen.width),
-                (e.clientY - objCoords.y) *
-                    ((window.screen.height - canvWidth) / window.screen.height)
+           ctx.lineTo(
+                ((e.clientX - canv.offsetLeft) * canv.width) / canv.clientWidth,
+                ((e.clientY - canv.offsetTop) * canv.height) / canv.clientHeight
             );
             ctx.stroke();
             ctx.beginPath();
 
             ctx.arc(
-                (e.clientX - objCoords.x) *
-                    ((window.screen.width - canvWidth) / window.screen.width),
-                (e.clientY - objCoords.y) *
-                    ((window.screen.height - canvWidth) / window.screen.height),
+                ((e.clientX - canv.offsetLeft) * canv.width) / canv.clientWidth,
+                ((e.clientY - canv.offsetTop) * canv.height) /
+                    canv.clientHeight,
                 2,
                 0,
                 Math.PI * 2
@@ -57,10 +54,8 @@ class MainCanvas extends Component {
             ctx.fill();
             ctx.beginPath();
             ctx.moveTo(
-                (e.clientX - objCoords.x) *
-                    ((window.screen.width - canvWidth) / window.screen.width),
-                (e.clientY - objCoords.y) *
-                    ((window.screen.height - canvWidth) / window.screen.height)
+                ((e.clientX - canv.offsetLeft) * canv.width) / canv.clientWidth,
+                ((e.clientY - canv.offsetTop) * canv.height) / canv.clientHeight
             );
         }
     };
