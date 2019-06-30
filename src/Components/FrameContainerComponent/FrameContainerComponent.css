@@ -1,0 +1,63 @@
+#mini-canvas {
+  width: 120px;
+  height: 120px;
+  box-sizing: border-box;
+  image-rendering: pixelated;
+}
+.canvas {
+  position: relative;
+  background-image: url('../../img/background.png');
+}
+.frame-container {
+  width: 150px;
+  height: 100%;
+}
+.frame {
+  width: 120px;
+  height: 120px;
+  margin: 27px;
+  position: relative;
+}
+.create-new-frame {
+  width: 120px;
+  height: 30px;
+  margin-left: 26px;
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  padding-top: 5px;
+  border-radius: 5px;
+  text-align: center;
+  color: #fae607;
+  font-size: 1.3em;
+  box-shadow: 0 0 10px #fae607;
+  cursor: pointer;
+}
+.copy-tool,
+.delete-tool,
+.copy-tool-new,
+.delete-tool-new {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  cursor: pointer;
+}
+.copy-tool {
+  background-image: url('../../img/copy.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.delete-tool {
+  background-image: url('../../img/trash.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.copy-tool {
+  left: 5%;
+  bottom: 5%;
+}
+.delete-tool {
+  left: 76%;
+  bottom: 5%;
+}
+.active {
+  border: 4px solid #fae607;
+}

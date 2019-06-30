@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Rancho&display=swap');
+* {
+  font-family: 'Rancho', cursive;
+}
+ul,
+li {
+  list-style-type: disc;
+}
+
+.landing-page {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.landing-page-screenshot {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  margin: 20px;
+}
+.link-to-main-page {
+  font-size: 35px;
+  text-decoration: none;
+  margin-bottom: 20px;
+  width: 200px;
+  height: 45px;
+  background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+  border-radius: 15px;
+  box-shadow: 0 0 10px 5px blue;
+  text-align: center;
+}
+.example-functional-image {
+  width: 600px;
+  height: 300px;
+  background-image: url('../../img/example.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.landing-page-overview_functionality {
+  margin: 0 0 0 3%;
+  color: #fff;
+  font-size: 20px;
+}
+.landing-page-overview_functionality p {
+  font-size: 30px;
+}
+.landing-page-animation-examples {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.landing-page-animation-image {
+  margin: 0 10px;
+}
+.landing-page-author-information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 24px;
+}
+.landing-page-author-information p {
+  margin-right: 10px;
+}
+.landing-page-footer-img {
+  margin: 3px 5px 0 0;
+}
+.landing-page-component {
+  height: 100vh;
+}

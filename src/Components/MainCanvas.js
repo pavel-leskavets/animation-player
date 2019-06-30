@@ -28,28 +28,22 @@ class MainCanvas extends Component {
         if (this.state.isMouseDown === true) {
             let canv = document.querySelector("#main-canvas");
             let ctx = canv.getContext("2d");
-            let objCoords = canv.getBoundingClientRect();
-            let canvStyles = window.getComputedStyle(canv);
-            let canvWidth = parseInt(canvStyles.width);
             this.updateMiniCanvas();
             this.setState({ context: ctx });
             this.setState({ value: this.state.value + 1 });
 
             ctx.lineWidth = 4;
             ctx.lineTo(
-                (e.clientX - objCoords.x) *
-                    ((window.screen.width - canvWidth) / window.screen.width),
-                (e.clientY - objCoords.y) *
-                    ((window.screen.height - canvWidth) / window.screen.height)
+                ((e.clientX - canv.offsetLeft) * canv.width) / canv.clientWidth,
+                ((e.clientY - canv.offsetTop) * canv.height) / canv.clientHeight
             );
             ctx.stroke();
             ctx.beginPath();
 
             ctx.arc(
-                (e.clientX - objCoords.x) *
-                    ((window.screen.width - canvWidth) / window.screen.width),
-                (e.clientY - objCoords.y) *
-                    ((window.screen.height - canvWidth) / window.screen.height),
+                ((e.clientX - canv.offsetLeft) * canv.width) / canv.clientWidth,
+                ((e.clientY - canv.offsetTop) * canv.height) /
+                    canv.clientHeight,
                 2,
                 0,
                 Math.PI * 2
@@ -57,13 +51,12 @@ class MainCanvas extends Component {
             ctx.fill();
             ctx.beginPath();
             ctx.moveTo(
-                (e.clientX - objCoords.x) *
-                    ((window.screen.width - canvWidth) / window.screen.width),
-                (e.clientY - objCoords.y) *
-                    ((window.screen.height - canvWidth) / window.screen.height)
+                ((e.clientX - canv.offsetLeft) * canv.width) / canv.clientWidth,
+                ((e.clientY - canv.offsetTop) * canv.height) / canv.clientHeight
             );
         }
     };
+
     shouldComponentUpdate(nextState) {
         this.updateMiniCanvas();
         return this.state.value !== nextState.value;

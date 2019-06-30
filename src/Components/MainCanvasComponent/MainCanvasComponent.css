@@ -1,0 +1,10 @@
+#main-canvas {
+  width: 38vw;
+  height: 38vw;
+  margin: 27px 27px 0 27px;
+  image-rendering: pixelated;
+}
+.canvas {
+  position: relative;
+  background-image: url('../../img/background.png');
+}
