@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/animation-player/static/css/main.055abc55.chunk.css",
+    "main.css": "/animation-player/static/css/main.7c97d490.chunk.css",
     "main.js": "/animation-player/static/js/main.a2f32e64.chunk.js",
     "main.js.map": "/animation-player/static/js/main.a2f32e64.chunk.js.map",
     "runtime~main.js": "/animation-player/static/js/runtime~main.58aee25c.js",
@@ -8,9 +8,9 @@
     "static/js/2.149de2b7.chunk.js": "/animation-player/static/js/2.149de2b7.chunk.js",
     "static/js/2.149de2b7.chunk.js.map": "/animation-player/static/js/2.149de2b7.chunk.js.map",
     "index.html": "/animation-player/index.html",
-    "precache-manifest.7eb7780d55e6bb3fe1d599a402ced6f0.js": "/animation-player/precache-manifest.7eb7780d55e6bb3fe1d599a402ced6f0.js",
+    "precache-manifest.4e6c25f6a16eab1d15e577c76d072725.js": "/animation-player/precache-manifest.4e6c25f6a16eab1d15e577c76d072725.js",
     "service-worker.js": "/animation-player/service-worker.js",
-    "static/css/main.055abc55.chunk.css.map": "/animation-player/static/css/main.055abc55.chunk.css.map",
+    "static/css/main.7c97d490.chunk.css.map": "/animation-player/static/css/main.7c97d490.chunk.css.map",
     "static/media/bat.gif": "/animation-player/static/media/bat.57300bcc.gif",
     "static/media/cat_landing.gif": "/animation-player/static/media/cat_landing.5601f86f.gif",
     "static/media/ToolsComponent.css": "/animation-player/static/media/chessboard.e8432507.png",
