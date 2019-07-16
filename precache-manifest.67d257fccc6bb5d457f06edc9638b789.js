@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "21ce7e62e759172d8dde4e6e0094db25",
+    "revision": "f21ab2fae6f210329fdecbc51d519636",
     "url": "/animation-player/index.html"
   },
   {
-    "revision": "79daf07bf8da09e132cd",
-    "url": "/animation-player/static/css/main.1e93a4a2.chunk.css"
+    "revision": "a19bbc127c18030b1b83",
+    "url": "/animation-player/static/css/main.885db952.chunk.css"
   },
   {
     "revision": "900aafc2d583787f1d67",
     "url": "/animation-player/static/js/2.149de2b7.chunk.js"
   },
   {
-    "revision": "79daf07bf8da09e132cd",
+    "revision": "a19bbc127c18030b1b83",
     "url": "/animation-player/static/js/main.a2f32e64.chunk.js"
   },
   {
@@ -32,8 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/animation-player/static/media/chessboard.e8432507.png"
   },
   {
-    "revision": "d36919317a74a46f7756cd9050d28b7a",
-    "url": "/animation-player/static/media/example.d3691931.png"
+    "revision": "fc7ea7d947c7ef8dc99073cc5b95c4ab",
+    "url": "/animation-player/static/media/example.fc7ea7d9.png"
   },
   {
     "revision": "26c200992dde11612d46eab7ae395b29",
